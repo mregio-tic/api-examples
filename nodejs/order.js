@@ -58,7 +58,7 @@ const body = JSON.stringify({
     },
   ],
   quotedTotalFee: {
-    amount: "50", // this is value from Quotation response, update it if needed
+    amount: "186", // this is value from Quotation response, update it if needed
     currency: "PHP",
   },
 });

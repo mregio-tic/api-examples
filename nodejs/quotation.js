@@ -34,13 +34,13 @@ const body = JSON.stringify({
     },
     {
       location: {
-        lat: "14.691056",
-        lng: "121.034410",
+        lat: "14.5116249",
+        lng: "121.0582659",
       },
       addresses: {
         en_PH: {
           displayString:
-            "58 F. Del Mundo St. Sauyo QC",
+            "Signal Village, Taguig City",
           market: region,
         },
       },
