@@ -2,12 +2,13 @@ const axios = require("axios");
 const CryptoJS = require("crypto-js");
 
 // Key & Secret
-const API_KEY = ""; // put your lalamove API key here
-const SECRET = ""; // put your lalamove API secret here
+const API_KEY = "pk_test_b908c73ef43ad72209477f3b8d15510f"; // put your lalamove API key here
+const SECRET = "sk_test_3WXbWu3jBaxSjUKhMgGujm4BKV7sgshbfQPnb8GqLUdxgL1seDphVrVhAzhXSkE4"; // put your lalamove API secret here
+
 
 axios.defaults.baseURL = "https://rest.sandbox.lalamove.com"; // URl to Lalamove Sandbox API
 const time = new Date().getTime().toString();
-const region = "SG_SIN";
+const region = "PH";
 const method = "POST";
 const path = "/v2/orders";
 
@@ -15,32 +16,32 @@ const body = JSON.stringify({
   serviceType: "MOTORCYCLE",
   specialRequests: [],
   requesterContact: {
-    name: "test",
-    phone: "0899183138",
+    name: "marck",
+    phone: "09778217638",
   },
   stops: [
     {
       location: {
-        lat: "1.3140113",
-        lng: "103.8807331",
+        lat: "14.691056",
+        lng: "121.034410",
       },
       addresses: {
-        en_SG: {
+        en_PH: {
           displayString:
-            "Lorong 23 Geylang, Singapore Badminton Hall, Singapore",
+            "58 F. Del Mundo St. Sauyo QC",
           market: region,
         },
       },
     },
     {
       location: {
-        lat: "1.2966147",
-        lng: "103.8485095",
+        lat: "14.691056",
+        lng: "121.034410",
       },
       addresses: {
-        en_SG: {
+        en_PH: {
           displayString:
-            "Stamford Road, National Museum of Singapore, Singapore",
+            "58 F. Del Mundo St. Sauyo QC",
           market: region,
         },
       },
@@ -50,15 +51,15 @@ const body = JSON.stringify({
     {
       toStop: 1,
       toContact: {
-        name: "dodo",
-        phone: "+660923447537",
+        name: "Marck Regio",
+        phone: "+639778217638",
       },
       remarks: "Do not take this order - SANDBOX CLIENT TEST",
     },
   ],
   quotedTotalFee: {
-    amount: "11.80", // this is value from Quotation response, update it if needed
-    currency: "SGD",
+    amount: "50", // this is value from Quotation response, update it if needed
+    currency: "PHP",
   },
 });
 
